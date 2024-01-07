@@ -16,19 +16,19 @@ docker login
 docker images
 
 # Build an Image
-docker build -t codingaslu/welcome-app .
+docker build -t username/welcome-app .
 
 # Alternative Build Command
 docker build -t welcome-app .
 
 # Push an Image to Docker Hub
-docker push codingaslu/welcome-app:latest
+docker push username/welcome-app:latest
 
 # Pull an Image from Docker Hub
-docker pull codingaslu/welcome-app:latest
+docker pull username/welcome-app:latest
 
 # Run a Container from an Image
-docker run -d -p 5000:5000 codingaslu/welcome-app:latest
+docker run -d -p 5000:5000 username/welcome-app:latest
 
 # Run Container Mapping Port 500:5000
 docker run -p 500:5000 welcome-app
